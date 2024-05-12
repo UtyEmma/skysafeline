@@ -1,145 +1,1177 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<x-guest-layout>
+    <div id="home" class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]">
+        <div class="container">
+            <div class="-mx-4 flex flex-wrap items-center">
+                <div class="w-full px-4">
+                    <div class="wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
+                        <h1 class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">Reclaim Your Assets, Reclaim Your Peace of Mind</h1>
+                        <p class="mx-auto mb-9 text-base font-medium text-white sm:text-lg sm:leading-[1.44]">Have you fallen victim to online scams or cyber fraud? Skysafeline understands the frustration and loss that comes with these unfortunate incidents. But here's the good news – you're not alone, and recovery is possible.</p>
+                    </div>
+                </div>
 
-        <title>Laravel</title>
+                <div class="w-full px-4">
+                    <div class="wow fadeInUp relative z-10 mx-auto max-w-2xl" data-wow-delay=".25s">
+                        <livewire:submit-request-form />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-        <!-- Styles -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="antialiased font-sans">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
-            <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" />
-            <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
-                <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                    <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                        <div class="flex lg:justify-center lg:col-start-2">
-                            <svg class="h-12 w-auto text-white lg:h-16 lg:text-[#FF2D20]" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="currentColor"/></svg>
+                        <div class="absolute -left-9 -bottom-9 z-[-1]">
+                            <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="1.66667" cy="104" r="1.66667" transform="rotate(-90 1.66667 104)"
+                                    fill="white" />
+                                <circle cx="16.3333" cy="104" r="1.66667" transform="rotate(-90 16.3333 104)"
+                                    fill="white" />
+                                <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="104" r="1.66667" transform="rotate(-90 45.6667 104)"
+                                    fill="white" />
+                                <circle cx="60.3333" cy="104" r="1.66667" transform="rotate(-90 60.3333 104)"
+                                    fill="white" />
+                                <circle cx="88.6667" cy="104" r="1.66667" transform="rotate(-90 88.6667 104)"
+                                    fill="white" />
+                                <circle cx="117.667" cy="104" r="1.66667" transform="rotate(-90 117.667 104)"
+                                    fill="white" />
+                                <circle cx="74.6667" cy="104" r="1.66667" transform="rotate(-90 74.6667 104)"
+                                    fill="white" />
+                                <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)"
+                                    fill="white" />
+                                <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 1.66667 89.3333)" fill="white" />
+                                <circle cx="16.3333" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 16.3333 89.3333)" fill="white" />
+                                <circle cx="31" cy="89.3333" r="1.66667" transform="rotate(-90 31 89.3333)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 45.6667 89.3333)" fill="white" />
+                                <circle cx="60.3333" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 60.3333 89.3338)" fill="white" />
+                                <circle cx="88.6667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 88.6667 89.3338)" fill="white" />
+                                <circle cx="117.667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 117.667 89.3338)" fill="white" />
+                                <circle cx="74.6667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 74.6667 89.3338)" fill="white" />
+                                <circle cx="103" cy="89.3338" r="1.66667" transform="rotate(-90 103 89.3338)"
+                                    fill="white" />
+                                <circle cx="132" cy="89.3338" r="1.66667" transform="rotate(-90 132 89.3338)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="74.6673" r="1.66667"
+                                    transform="rotate(-90 1.66667 74.6673)" fill="white" />
+                                <circle cx="1.66667" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 1.66667 31.0003)" fill="white" />
+                                <circle cx="16.3333" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 16.3333 74.6668)" fill="white" />
+                                <circle cx="16.3333" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 16.3333 31.0003)" fill="white" />
+                                <circle cx="31" cy="74.6668" r="1.66667" transform="rotate(-90 31 74.6668)"
+                                    fill="white" />
+                                <circle cx="31" cy="31.0003" r="1.66667" transform="rotate(-90 31 31.0003)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 45.6667 74.6668)" fill="white" />
+                                <circle cx="45.6667" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 45.6667 31.0003)" fill="white" />
+                                <circle cx="60.3333" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 60.3333 74.6668)" fill="white" />
+                                <circle cx="60.3333" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 60.3333 31.0001)" fill="white" />
+                                <circle cx="88.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 88.6667 74.6668)" fill="white" />
+                                <circle cx="88.6667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 88.6667 31.0001)" fill="white" />
+                                <circle cx="117.667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 117.667 74.6668)" fill="white" />
+                                <circle cx="117.667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 117.667 31.0001)" fill="white" />
+                                <circle cx="74.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 74.6667 74.6668)" fill="white" />
+                                <circle cx="74.6667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 74.6667 31.0001)" fill="white" />
+                                <circle cx="103" cy="74.6668" r="1.66667" transform="rotate(-90 103 74.6668)"
+                                    fill="white" />
+                                <circle cx="103" cy="31.0001" r="1.66667" transform="rotate(-90 103 31.0001)"
+                                    fill="white" />
+                                <circle cx="132" cy="74.6668" r="1.66667" transform="rotate(-90 132 74.6668)"
+                                    fill="white" />
+                                <circle cx="132" cy="31.0001" r="1.66667" transform="rotate(-90 132 31.0001)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 1.66667 60.0003)" fill="white" />
+                                <circle cx="1.66667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 1.66667 16.3336)" fill="white" />
+                                <circle cx="16.3333" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 16.3333 60.0003)" fill="white" />
+                                <circle cx="16.3333" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 16.3333 16.3336)" fill="white" />
+                                <circle cx="31" cy="60.0003" r="1.66667" transform="rotate(-90 31 60.0003)"
+                                    fill="white" />
+                                <circle cx="31" cy="16.3336" r="1.66667" transform="rotate(-90 31 16.3336)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 45.6667 60.0003)" fill="white" />
+                                <circle cx="45.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 45.6667 16.3336)" fill="white" />
+                                <circle cx="60.3333" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 60.3333 60.0003)" fill="white" />
+                                <circle cx="60.3333" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 60.3333 16.3336)" fill="white" />
+                                <circle cx="88.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 88.6667 60.0003)" fill="white" />
+                                <circle cx="88.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 88.6667 16.3336)" fill="white" />
+                                <circle cx="117.667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 117.667 60.0003)" fill="white" />
+                                <circle cx="117.667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 117.667 16.3336)" fill="white" />
+                                <circle cx="74.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 74.6667 60.0003)" fill="white" />
+                                <circle cx="74.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 74.6667 16.3336)" fill="white" />
+                                <circle cx="103" cy="60.0003" r="1.66667" transform="rotate(-90 103 60.0003)"
+                                    fill="white" />
+                                <circle cx="103" cy="16.3336" r="1.66667" transform="rotate(-90 103 16.3336)"
+                                    fill="white" />
+                                <circle cx="132" cy="60.0003" r="1.66667" transform="rotate(-90 132 60.0003)"
+                                    fill="white" />
+                                <circle cx="132" cy="16.3336" r="1.66667" transform="rotate(-90 132 16.3336)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 1.66667 45.3336)" fill="white" />
+                                <circle cx="1.66667" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 1.66667 1.66683)" fill="white" />
+                                <circle cx="16.3333" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 16.3333 45.3336)" fill="white" />
+                                <circle cx="16.3333" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 16.3333 1.66683)" fill="white" />
+                                <circle cx="31" cy="45.3336" r="1.66667" transform="rotate(-90 31 45.3336)"
+                                    fill="white" />
+                                <circle cx="31" cy="1.66683" r="1.66667" transform="rotate(-90 31 1.66683)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 45.6667 45.3336)" fill="white" />
+                                <circle cx="45.6667" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 45.6667 1.66683)" fill="white" />
+                                <circle cx="60.3333" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 60.3333 45.3338)" fill="white" />
+                                <circle cx="60.3333" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 60.3333 1.66707)" fill="white" />
+                                <circle cx="88.6667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 88.6667 45.3338)" fill="white" />
+                                <circle cx="88.6667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 88.6667 1.66707)" fill="white" />
+                                <circle cx="117.667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 117.667 45.3338)" fill="white" />
+                                <circle cx="117.667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 117.667 1.66707)" fill="white" />
+                                <circle cx="74.6667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 74.6667 45.3338)" fill="white" />
+                                <circle cx="74.6667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 74.6667 1.66707)" fill="white" />
+                                <circle cx="103" cy="45.3338" r="1.66667" transform="rotate(-90 103 45.3338)"
+                                    fill="white" />
+                                <circle cx="103" cy="1.66707" r="1.66667" transform="rotate(-90 103 1.66707)"
+                                    fill="white" />
+                                <circle cx="132" cy="45.3338" r="1.66667" transform="rotate(-90 132 45.3338)"
+                                    fill="white" />
+                                <circle cx="132" cy="1.66707" r="1.66667" transform="rotate(-90 132 1.66707)"
+                                    fill="white" />
+                            </svg>
                         </div>
-                        @if (Route::has('login'))
-                            <livewire:welcome.navigation />
-                        @endif
-                    </header>
+                        <div class="absolute -right-6 -top-6 z-[-1]">
+                            <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="1.66667" cy="104" r="1.66667" transform="rotate(-90 1.66667 104)"
+                                    fill="white" />
+                                <circle cx="16.3333" cy="104" r="1.66667" transform="rotate(-90 16.3333 104)"
+                                    fill="white" />
+                                <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="104" r="1.66667" transform="rotate(-90 45.6667 104)"
+                                    fill="white" />
+                                <circle cx="60.3333" cy="104" r="1.66667" transform="rotate(-90 60.3333 104)"
+                                    fill="white" />
+                                <circle cx="88.6667" cy="104" r="1.66667" transform="rotate(-90 88.6667 104)"
+                                    fill="white" />
+                                <circle cx="117.667" cy="104" r="1.66667" transform="rotate(-90 117.667 104)"
+                                    fill="white" />
+                                <circle cx="74.6667" cy="104" r="1.66667" transform="rotate(-90 74.6667 104)"
+                                    fill="white" />
+                                <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)"
+                                    fill="white" />
+                                <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 1.66667 89.3333)" fill="white" />
+                                <circle cx="16.3333" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 16.3333 89.3333)" fill="white" />
+                                <circle cx="31" cy="89.3333" r="1.66667" transform="rotate(-90 31 89.3333)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="89.3333" r="1.66667"
+                                    transform="rotate(-90 45.6667 89.3333)" fill="white" />
+                                <circle cx="60.3333" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 60.3333 89.3338)" fill="white" />
+                                <circle cx="88.6667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 88.6667 89.3338)" fill="white" />
+                                <circle cx="117.667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 117.667 89.3338)" fill="white" />
+                                <circle cx="74.6667" cy="89.3338" r="1.66667"
+                                    transform="rotate(-90 74.6667 89.3338)" fill="white" />
+                                <circle cx="103" cy="89.3338" r="1.66667" transform="rotate(-90 103 89.3338)"
+                                    fill="white" />
+                                <circle cx="132" cy="89.3338" r="1.66667" transform="rotate(-90 132 89.3338)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="74.6673" r="1.66667"
+                                    transform="rotate(-90 1.66667 74.6673)" fill="white" />
+                                <circle cx="1.66667" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 1.66667 31.0003)" fill="white" />
+                                <circle cx="16.3333" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 16.3333 74.6668)" fill="white" />
+                                <circle cx="16.3333" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 16.3333 31.0003)" fill="white" />
+                                <circle cx="31" cy="74.6668" r="1.66667" transform="rotate(-90 31 74.6668)"
+                                    fill="white" />
+                                <circle cx="31" cy="31.0003" r="1.66667" transform="rotate(-90 31 31.0003)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 45.6667 74.6668)" fill="white" />
+                                <circle cx="45.6667" cy="31.0003" r="1.66667"
+                                    transform="rotate(-90 45.6667 31.0003)" fill="white" />
+                                <circle cx="60.3333" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 60.3333 74.6668)" fill="white" />
+                                <circle cx="60.3333" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 60.3333 31.0001)" fill="white" />
+                                <circle cx="88.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 88.6667 74.6668)" fill="white" />
+                                <circle cx="88.6667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 88.6667 31.0001)" fill="white" />
+                                <circle cx="117.667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 117.667 74.6668)" fill="white" />
+                                <circle cx="117.667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 117.667 31.0001)" fill="white" />
+                                <circle cx="74.6667" cy="74.6668" r="1.66667"
+                                    transform="rotate(-90 74.6667 74.6668)" fill="white" />
+                                <circle cx="74.6667" cy="31.0001" r="1.66667"
+                                    transform="rotate(-90 74.6667 31.0001)" fill="white" />
+                                <circle cx="103" cy="74.6668" r="1.66667" transform="rotate(-90 103 74.6668)"
+                                    fill="white" />
+                                <circle cx="103" cy="31.0001" r="1.66667" transform="rotate(-90 103 31.0001)"
+                                    fill="white" />
+                                <circle cx="132" cy="74.6668" r="1.66667" transform="rotate(-90 132 74.6668)"
+                                    fill="white" />
+                                <circle cx="132" cy="31.0001" r="1.66667" transform="rotate(-90 132 31.0001)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 1.66667 60.0003)" fill="white" />
+                                <circle cx="1.66667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 1.66667 16.3336)" fill="white" />
+                                <circle cx="16.3333" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 16.3333 60.0003)" fill="white" />
+                                <circle cx="16.3333" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 16.3333 16.3336)" fill="white" />
+                                <circle cx="31" cy="60.0003" r="1.66667" transform="rotate(-90 31 60.0003)"
+                                    fill="white" />
+                                <circle cx="31" cy="16.3336" r="1.66667" transform="rotate(-90 31 16.3336)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 45.6667 60.0003)" fill="white" />
+                                <circle cx="45.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 45.6667 16.3336)" fill="white" />
+                                <circle cx="60.3333" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 60.3333 60.0003)" fill="white" />
+                                <circle cx="60.3333" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 60.3333 16.3336)" fill="white" />
+                                <circle cx="88.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 88.6667 60.0003)" fill="white" />
+                                <circle cx="88.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 88.6667 16.3336)" fill="white" />
+                                <circle cx="117.667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 117.667 60.0003)" fill="white" />
+                                <circle cx="117.667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 117.667 16.3336)" fill="white" />
+                                <circle cx="74.6667" cy="60.0003" r="1.66667"
+                                    transform="rotate(-90 74.6667 60.0003)" fill="white" />
+                                <circle cx="74.6667" cy="16.3336" r="1.66667"
+                                    transform="rotate(-90 74.6667 16.3336)" fill="white" />
+                                <circle cx="103" cy="60.0003" r="1.66667" transform="rotate(-90 103 60.0003)"
+                                    fill="white" />
+                                <circle cx="103" cy="16.3336" r="1.66667" transform="rotate(-90 103 16.3336)"
+                                    fill="white" />
+                                <circle cx="132" cy="60.0003" r="1.66667" transform="rotate(-90 132 60.0003)"
+                                    fill="white" />
+                                <circle cx="132" cy="16.3336" r="1.66667" transform="rotate(-90 132 16.3336)"
+                                    fill="white" />
+                                <circle cx="1.66667" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 1.66667 45.3336)" fill="white" />
+                                <circle cx="1.66667" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 1.66667 1.66683)" fill="white" />
+                                <circle cx="16.3333" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 16.3333 45.3336)" fill="white" />
+                                <circle cx="16.3333" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 16.3333 1.66683)" fill="white" />
+                                <circle cx="31" cy="45.3336" r="1.66667" transform="rotate(-90 31 45.3336)"
+                                    fill="white" />
+                                <circle cx="31" cy="1.66683" r="1.66667" transform="rotate(-90 31 1.66683)"
+                                    fill="white" />
+                                <circle cx="45.6667" cy="45.3336" r="1.66667"
+                                    transform="rotate(-90 45.6667 45.3336)" fill="white" />
+                                <circle cx="45.6667" cy="1.66683" r="1.66667"
+                                    transform="rotate(-90 45.6667 1.66683)" fill="white" />
+                                <circle cx="60.3333" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 60.3333 45.3338)" fill="white" />
+                                <circle cx="60.3333" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 60.3333 1.66707)" fill="white" />
+                                <circle cx="88.6667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 88.6667 45.3338)" fill="white" />
+                                <circle cx="88.6667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 88.6667 1.66707)" fill="white" />
+                                <circle cx="117.667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 117.667 45.3338)" fill="white" />
+                                <circle cx="117.667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 117.667 1.66707)" fill="white" />
+                                <circle cx="74.6667" cy="45.3338" r="1.66667"
+                                    transform="rotate(-90 74.6667 45.3338)" fill="white" />
+                                <circle cx="74.6667" cy="1.66707" r="1.66667"
+                                    transform="rotate(-90 74.6667 1.66707)" fill="white" />
+                                <circle cx="103" cy="45.3338" r="1.66667" transform="rotate(-90 103 45.3338)"
+                                    fill="white" />
+                                <circle cx="103" cy="1.66707" r="1.66667" transform="rotate(-90 103 1.66707)"
+                                    fill="white" />
+                                <circle cx="132" cy="45.3338" r="1.66667" transform="rotate(-90 132 45.3338)"
+                                    fill="white" />
+                                <circle cx="132" cy="1.66707" r="1.66667" transform="rotate(-90 132 1.66707)"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <main class="mt-6">
-                        <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
-                            <a
-                                href="https://laravel.com/docs"
-                                id="docs-card"
-                                class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-light.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.06)] dark:hidden"
-                                        onerror="
-                                            document.getElementById('screenshot-container').classList.add('!hidden');
-                                            document.getElementById('docs-card').classList.add('!row-span-1');
-                                            document.getElementById('docs-card-content').classList.add('!flex-row');
-                                            document.getElementById('background').classList.add('!hidden');
-                                        "
-                                    />
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-dark.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="hidden aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.25)] dark:block"
-                                    />
-                                    <div
-                                        class="absolute -bottom-16 -left-16 h-40 w-[calc(100%+8rem)] bg-gradient-to-b from-transparent via-white to-white dark:via-zinc-900 dark:to-zinc-900"
-                                    ></div>
+    <section id="about" class="pb-8 pt-20 lg:pb-[70px] lg:pt-[120px]">
+        <div class="container">
+            <div class="wow fadeInUp" data-wow-delay=".2s">
+                <div class="-mx-4 flex flex-wrap items-center">
+                    <div class="w-full px-4 lg:w-1/2">
+                        <div class="mb-12 max-w-[540px] lg:mb-0">
+                            <h2
+                                class="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
+                                Brilliant Toolkit to Build Nextgen Website Faster.
+                            </h2>
+                            <p class="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+                                The main ‘thrust' is to focus on educating attendees on how to
+                                best protect highly vulnerable business applications with
+                                interactive panel discussions and roundtables led by subject
+                                matter experts.
+                                <br />
+                                <br />
+                                The main ‘thrust' is to focus on educating attendees on how to
+                                best protect highly vulnerable business applications with
+                                interactive panel.
+                            </p>
+
+                            <a href="javascript:void(0)"
+                                class="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-blue-dark hover:bg-blue-dark">
+                                Know More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full px-4 lg:w-1/2">
+                        <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
+                            <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                                <div class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
+                                    <img src="./assets/images/about/about-image-01.jpg" alt="about image"
+                                        class="h-full w-full object-cover object-center" />
+                                </div>
+                            </div>
+
+                            <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                                <div
+                                    class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
+                                    <img src="./assets/images/about/about-image-02.jpg" alt="about image"
+                                        class="h-full w-full object-cover object-center" />
                                 </div>
 
-                                <div class="relative flex items-center gap-6 lg:items-end">
-                                    <div id="docs-card-content" class="flex items-start gap-6 lg:flex-col">
-                                        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                            <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#FF2D20" d="M23 4a1 1 0 0 0-1.447-.894L12.224 7.77a.5.5 0 0 1-.448 0L2.447 3.106A1 1 0 0 0 1 4v13.382a1.99 1.99 0 0 0 1.105 1.79l9.448 4.728c.14.065.293.1.447.1.154-.005.306-.04.447-.105l9.453-4.724a1.99 1.99 0 0 0 1.1-1.789V4ZM3 6.023a.25.25 0 0 1 .362-.223l7.5 3.75a.251.251 0 0 1 .138.223v11.2a.25.25 0 0 1-.362.224l-7.5-3.75a.25.25 0 0 1-.138-.22V6.023Zm18 11.2a.25.25 0 0 1-.138.224l-7.5 3.75a.249.249 0 0 1-.329-.099.249.249 0 0 1-.033-.12V9.772a.251.251 0 0 1 .138-.224l7.5-3.75a.25.25 0 0 1 .362.224v11.2Z"/><path fill="#FF2D20" d="m3.55 1.893 8 4.048a1.008 1.008 0 0 0 .9 0l8-4.048a1 1 0 0 0-.9-1.785l-7.322 3.706a.506.506 0 0 1-.452 0L4.454.108a1 1 0 0 0-.9 1.785H3.55Z"/></svg>
-                                        </div>
+                                <div
+                                    class="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
+                                    <div>
+                                        <span class="block text-5xl font-extrabold text-white">
+                                            09
+                                        </span>
+                                        <span class="block text-base font-semibold text-white">
+                                            We have
+                                        </span>
+                                        <span class="block text-base font-medium text-white text-opacity-70">
+                                            Years of experience
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="absolute left-0 top-0 -z-10">
+                                            <svg width="106" height="144" viewBox="0 0 106 144" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect opacity="0.1" x="-67" y="47.127" width="113.378"
+                                                    height="131.304" transform="rotate(-42.8643 -67 47.127)"
+                                                    fill="url(#paint0_linear_1416_214)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_1416_214" x1="-10.3111"
+                                                        y1="47.127" x2="-10.3111" y2="178.431"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="absolute right-0 top-0 -z-10">
+                                            <svg width="130" height="97" viewBox="0 0 130 97" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect opacity="0.1" x="0.86792" y="-6.67725" width="155.563"
+                                                    height="140.614" transform="rotate(-42.8643 0.86792 -6.67725)"
+                                                    fill="url(#paint0_linear_1416_215)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_1416_215" x1="78.6495"
+                                                        y1="-6.67725" x2="78.6495" y2="133.937"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="absolute bottom-0 right-0 -z-10">
+                                            <svg width="175" height="104" viewBox="0 0 175 104" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect opacity="0.1" x="175.011" y="108.611" width="101.246"
+                                                    height="148.179" transform="rotate(137.136 175.011 108.611)"
+                                                    fill="url(#paint0_linear_1416_216)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_1416_216" x1="225.634"
+                                                        y1="108.611" x2="225.634" y2="256.79"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== About Section End -->
 
-                                        <div class="pt-3 sm:pt-5 lg:pt-0">
-                                            <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
+    <!-- ====== CTA Section Start -->
+    <section class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
+        <div class="container mx-auto">
+            <div class="relative overflow-hidden">
+                <div class="-mx-4 flex flex-wrap items-stretch">
+                    <div class="w-full px-4">
+                        <div class="mx-auto max-w-[570px] text-center">
+                            <h2 class="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                                <span>What Are You Looking For?</span>
+                                <span class="text-3xl font-normal md:text-[40px]">
+                                    Get Started Now
+                                </span>
+                            </h2>
+                            <p class="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
+                                There are many variations of passages of Lorem Ipsum but the
+                                majority have suffered in some form.
+                            </p>
+                            <a href="javascript:void(0)"
+                                class="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
+                                Start using Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="absolute left-0 top-0">
+                <svg width="495" height="470" viewBox="0 0 495 470" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="55" cy="442" r="138" stroke="white" stroke-opacity="0.04"
+                        stroke-width="50" />
+                    <circle cx="446" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
+                    <path d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z" stroke="white"
+                        stroke-opacity="0.08" stroke-width="12" />
+                </svg>
+            </span>
+            <span class="absolute bottom-0 right-0">
+                <svg width="493" height="470" viewBox="0 0 493 470" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="462" cy="5" r="138" stroke="white" stroke-opacity="0.04"
+                        stroke-width="50" />
+                    <circle cx="49" cy="470" r="39" stroke="white" stroke-opacity="0.04"
+                        stroke-width="20" />
+                    <path d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z" stroke="white"
+                        stroke-opacity="0.06" stroke-width="13" />
+                </svg>
+            </span>
+        </div>
+    </section>
 
-                                            <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
-                                        </div>
+    <!-- ====== Testimonial Section Start -->
+    <section id="testimonials" class="overflow-hidden bg-gray-1 py-20 dark:bg-dark-2 md:py-[120px]">
+        <div class="container mx-auto">
+            <div class="-mx-4 flex flex-wrap justify-center">
+                <div class="w-full px-4">
+                    <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+                        <span class="mb-2 block text-lg font-semibold text-primary">
+                            Testimonials
+                        </span>
+                        <h2
+                            class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            What our Clients Say
+                        </h2>
+                        <p class="text-base text-body-color dark:text-dark-6">
+                            There are many variations of passages of Lorem Ipsum available
+                            but the majority have suffered alteration in some form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="-m-5">
+                <div class="swiper testimonial-carousel common-carousel p-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                </div>
+
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
+
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-01.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
                                     </div>
 
-                                    <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                                </div>
-                            </a>
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            Sabo Masties
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">Founder @ Rolex</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-                            <a
-                                href="https://laracasts.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M24 8.25a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a2.5 2.5 0 0 0 2.5 2.5h19a2.5 2.5 0 0 0 2.5-2.5v-12Zm-7.765 5.868a1.221 1.221 0 0 1 0 2.264l-6.626 2.776A1.153 1.153 0 0 1 8 18.123v-5.746a1.151 1.151 0 0 1 1.609-1.035l6.626 2.776ZM19.564 1.677a.25.25 0 0 0-.177-.427H15.6a.106.106 0 0 0-.072.03l-4.54 4.543a.25.25 0 0 0 .177.427h3.783c.027 0 .054-.01.073-.03l4.543-4.543ZM22.071 1.318a.047.047 0 0 0-.045.013l-4.492 4.492a.249.249 0 0 0 .038.385.25.25 0 0 0 .14.042h5.784a.5.5 0 0 0 .5-.5v-2a2.5 2.5 0 0 0-1.925-2.432ZM13.014 1.677a.25.25 0 0 0-.178-.427H9.101a.106.106 0 0 0-.073.03l-4.54 4.543a.25.25 0 0 0 .177.427H8.4a.106.106 0 0 0 .073-.03l4.54-4.543ZM6.513 1.677a.25.25 0 0 0-.177-.427H2.5A2.5 2.5 0 0 0 0 3.75v2a.5.5 0 0 0 .5.5h1.4a.106.106 0 0 0 .073-.03l4.54-4.543Z"/></g></svg>
-                                </div>
-
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
-
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                    </p>
-                                </div>
-
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
-
-                            <a
-                                href="https://laravel-news.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M8.75 4.5H5.5c-.69 0-1.25.56-1.25 1.25v4.75c0 .69.56 1.25 1.25 1.25h3.25c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25Z"/><path d="M24 10a3 3 0 0 0-3-3h-2V2.5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2V20a3.5 3.5 0 0 0 3.5 3.5h17A3.5 3.5 0 0 0 24 20V10ZM3.5 21.5A1.5 1.5 0 0 1 2 20V3a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 .5.5v17c0 .295.037.588.11.874a.5.5 0 0 1-.484.625L3.5 21.5ZM22 20a1.5 1.5 0 1 1-3 0V9.5a.5.5 0 0 1 .5-.5H21a1 1 0 0 1 1 1v10Z"/><path d="M12.751 6.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 7.3v-.5a.75.75 0 0 1 .751-.753ZM12.751 10.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 11.3v-.5a.75.75 0 0 1 .751-.753ZM4.751 14.047h10a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-10A.75.75 0 0 1 4 15.3v-.5a.75.75 0 0 1 .751-.753ZM4.75 18.047h7.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-7.5A.75.75 0 0 1 4 19.3v-.5a.75.75 0 0 1 .75-.753Z"/></g></svg>
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laravel News</h2>
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
 
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                    </p>
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-02.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            Musharof Chowdhury
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">
+                                            Founder @ Ayro UI
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
 
-                            <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <g fill="#FF2D20">
-                                            <path
-                                                d="M16.597 12.635a.247.247 0 0 0-.08-.237 2.234 2.234 0 0 1-.769-1.68c.001-.195.03-.39.084-.578a.25.25 0 0 0-.09-.267 8.8 8.8 0 0 0-4.826-1.66.25.25 0 0 0-.268.181 2.5 2.5 0 0 1-2.4 1.824.045.045 0 0 0-.045.037 12.255 12.255 0 0 0-.093 3.86.251.251 0 0 0 .208.214c2.22.366 4.367 1.08 6.362 2.118a.252.252 0 0 0 .32-.079 10.09 10.09 0 0 0 1.597-3.733ZM13.616 17.968a.25.25 0 0 0-.063-.407A19.697 19.697 0 0 0 8.91 15.98a.25.25 0 0 0-.287.325c.151.455.334.898.548 1.328.437.827.981 1.594 1.619 2.28a.249.249 0 0 0 .32.044 29.13 29.13 0 0 0 2.506-1.99ZM6.303 14.105a.25.25 0 0 0 .265-.274 13.048 13.048 0 0 1 .205-4.045.062.062 0 0 0-.022-.07 2.5 2.5 0 0 1-.777-.982.25.25 0 0 0-.271-.149 11 11 0 0 0-5.6 2.815.255.255 0 0 0-.075.163c-.008.135-.02.27-.02.406.002.8.084 1.598.246 2.381a.25.25 0 0 0 .303.193 19.924 19.924 0 0 1 5.746-.438ZM9.228 20.914a.25.25 0 0 0 .1-.393 11.53 11.53 0 0 1-1.5-2.22 12.238 12.238 0 0 1-.91-2.465.248.248 0 0 0-.22-.187 18.876 18.876 0 0 0-5.69.33.249.249 0 0 0-.179.336c.838 2.142 2.272 4 4.132 5.353a.254.254 0 0 0 .15.048c1.41-.01 2.807-.282 4.117-.802ZM18.93 12.957l-.005-.008a.25.25 0 0 0-.268-.082 2.21 2.21 0 0 1-.41.081.25.25 0 0 0-.217.2c-.582 2.66-2.127 5.35-5.75 7.843a.248.248 0 0 0-.09.299.25.25 0 0 0 .065.091 28.703 28.703 0 0 0 2.662 2.12.246.246 0 0 0 .209.037c2.579-.701 4.85-2.242 6.456-4.378a.25.25 0 0 0 .048-.189 13.51 13.51 0 0 0-2.7-6.014ZM5.702 7.058a.254.254 0 0 0 .2-.165A2.488 2.488 0 0 1 7.98 5.245a.093.093 0 0 0 .078-.062 19.734 19.734 0 0 1 3.055-4.74.25.25 0 0 0-.21-.41 12.009 12.009 0 0 0-10.4 8.558.25.25 0 0 0 .373.281 12.912 12.912 0 0 1 4.826-1.814ZM10.773 22.052a.25.25 0 0 0-.28-.046c-.758.356-1.55.635-2.365.833a.25.25 0 0 0-.022.48c1.252.43 2.568.65 3.893.65.1 0 .2 0 .3-.008a.25.25 0 0 0 .147-.444c-.526-.424-1.1-.917-1.673-1.465ZM18.744 8.436a.249.249 0 0 0 .15.228 2.246 2.246 0 0 1 1.352 2.054c0 .337-.08.67-.23.972a.25.25 0 0 0 .042.28l.007.009a15.016 15.016 0 0 1 2.52 4.6.25.25 0 0 0 .37.132.25.25 0 0 0 .096-.114c.623-1.464.944-3.039.945-4.63a12.005 12.005 0 0 0-5.78-10.258.25.25 0 0 0-.373.274c.547 2.109.85 4.274.901 6.453ZM9.61 5.38a.25.25 0 0 0 .08.31c.34.24.616.561.8.935a.25.25 0 0 0 .3.127.631.631 0 0 1 .206-.034c2.054.078 4.036.772 5.69 1.991a.251.251 0 0 0 .267.024c.046-.024.093-.047.141-.067a.25.25 0 0 0 .151-.23A29.98 29.98 0 0 0 15.957.764a.25.25 0 0 0-.16-.164 11.924 11.924 0 0 0-2.21-.518.252.252 0 0 0-.215.076A22.456 22.456 0 0 0 9.61 5.38Z"
-                                            />
-                                        </g>
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-03.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            William Smith
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">
+                                            Founder @ Trorex
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                </div>
+
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
+
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-01.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            Sabo Masties
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">Founder @ Rolex</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                </div>
+
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
+
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-02.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            Musharof Chowdhury
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">
+                                            Founder @ Ayro UI
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                <div class="mb-[18px] flex items-center gap-[2px]">
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                    <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
+                                </div>
+
+                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                    “Our members are so impressed. It's intuitive. It's clean.
+                                    It's distraction free. If you're building a community.’’
+                                </p>
+
+                                <a href="#" class="flex items-center gap-4">
+                                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                                        <img src="./assets/images/testimonials/author-03.jpg" alt="author"
+                                            class="h-[50px] w-[50px] overflow-hidden rounded-full" />
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                            William Smith
+                                        </h3>
+                                        <p class="text-xs text-body-secondary">
+                                            Founder @ Trorex
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-[60px] flex items-center justify-center gap-1">
+                        <div class="swiper-button-prev">
+                            <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.25 10.2437H4.57187L10.4156 4.29687C10.725 3.9875 10.725 3.50625 10.4156 3.19687C10.1062 2.8875 9.625 2.8875 9.31562 3.19687L2.2 10.4156C1.89062 10.725 1.89062 11.2063 2.2 11.5156L9.31562 18.7344C9.45312 18.8719 9.65937 18.975 9.86562 18.975C10.0719 18.975 10.2437 18.9062 10.4156 18.7687C10.725 18.4594 10.725 17.9781 10.4156 17.6688L4.60625 11.7906H19.25C19.6625 11.7906 20.0063 11.4469 20.0063 11.0344C20.0063 10.5875 19.6625 10.2437 19.25 10.2437Z" />
+                            </svg>
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.8 10.45L12.6844 3.2313C12.375 2.92192 11.8938 2.92192 11.5844 3.2313C11.275 3.54067 11.275 4.02192 11.5844 4.3313L17.3594 10.2094H2.75C2.3375 10.2094 1.99375 10.5532 1.99375 10.9657C1.99375 11.3782 2.3375 11.7563 2.75 11.7563H17.4281L11.5844 17.7032C11.275 18.0126 11.275 18.4938 11.5844 18.8032C11.7219 18.9407 11.9281 19.0094 12.1344 19.0094C12.3406 19.0094 12.5469 18.9407 12.6844 18.7688L19.8 11.55C20.1094 11.2407 20.1094 10.7594 19.8 10.45Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Testimonial Section End -->
+
+    <!-- ====== FAQ Section Start -->
+    <section class="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+        <div class="container mx-auto">
+            <div class="-mx-4 flex flex-wrap">
+                <div class="w-full px-4">
+                    <div class="mx-auto mb-[60px] max-w-[520px] text-center">
+                        <span class="mb-2 block text-lg font-semibold text-primary">
+                            FAQ
+                        </span>
+                        <h2
+                            class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            Any Questions? Look Here
+                        </h2>
+                        <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
+                            There are many variations of passages of Lorem Ipsum available
+                            but the majority have suffered alteration in some form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="-mx-4 flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2">
+                    <div class="mb-12 flex lg:mb-[70px]">
+                        <div
+                            class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+                            <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                                <path
+                                    d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                                <path
+                                    d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                                <path
+                                    d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <h3
+                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                Is TailGrids Well-documented?
+                            </h3>
+                            <p class="text-base text-body-color dark:text-dark-6">
+                                It takes 2-3 weeks to get your first blog post ready. That
+                                includes the in-depth research & creation of your monthly
+                                content ui/ux strategy that we do writing your first blog
+                                post.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex lg:mb-[70px]">
+                        <div
+                            class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+                            <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                                <path
+                                    d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                                <path
+                                    d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                                <path
+                                    d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <h3
+                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                Is TailGrids Well-documented?
+                            </h3>
+                            <p class="text-base text-body-color dark:text-dark-6">
+                                It takes 2-3 weeks to get your first blog post ready. That
+                                includes the in-depth research & creation of your monthly
+                                content ui/ux strategy that we do writing your first blog
+                                post.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <div class="mb-12 flex lg:mb-[70px]">
+                        <div
+                            class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+                            <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                                <path
+                                    d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                                <path
+                                    d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                                <path
+                                    d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <h3
+                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                Is TailGrids Well-documented?
+                            </h3>
+                            <p class="text-base text-body-color dark:text-dark-6">
+                                It takes 2-3 weeks to get your first blog post ready. That
+                                includes the in-depth research & creation of your monthly
+                                content ui/ux strategy that we do writing your first blog
+                                post.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex lg:mb-[70px]">
+                        <div
+                            class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+                            <svg width="32" height="32" viewBox="0 0 34 34" class="fill-current">
+                                <path
+                                    d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
+                                <path
+                                    d="M17.9039 6.32194C16.3633 6.05631 14.8227 6.48131 13.707 7.43756C12.5383 8.39381 11.8477 9.82819 11.8477 11.3688C11.8477 11.9532 11.9539 12.5376 12.1664 13.0688C12.3258 13.5469 12.857 13.8126 13.3352 13.6532C13.8133 13.4938 14.0789 12.9626 13.9195 12.4844C13.8133 12.1126 13.707 11.7938 13.707 11.3688C13.707 10.4126 14.132 9.50944 14.8758 8.87194C15.6195 8.23444 16.5758 7.96881 17.5852 8.18131C18.9133 8.39381 19.9758 9.50944 20.1883 10.7844C20.4539 12.3251 19.657 13.8126 18.2227 14.3969C16.8945 14.9282 16.0445 16.2563 16.0445 17.7969V21.1969C16.0445 21.7282 16.4695 22.1532 17.0008 22.1532C17.532 22.1532 17.957 21.7282 17.957 21.1969V17.7969C17.957 17.0532 18.382 16.3626 18.9664 16.1501C21.1977 15.2469 22.4727 12.9094 22.0477 10.4657C21.6758 8.39381 19.9758 6.69381 17.9039 6.32194Z" />
+                                <path
+                                    d="M17.0531 24.8625H16.8937C16.3625 24.8625 15.9375 25.2875 15.9375 25.8188C15.9375 26.35 16.3625 26.7751 16.8937 26.7751H17.0531C17.5844 26.7751 18.0094 26.35 18.0094 25.8188C18.0094 25.2875 17.5844 24.8625 17.0531 24.8625Z" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <h3
+                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                Is TailGrids Well-documented?
+                            </h3>
+                            <p class="text-base text-body-color dark:text-dark-6">
+                                It takes 2-3 weeks to get your first blog post ready. That
+                                includes the in-depth research & creation of your monthly
+                                content ui/ux strategy that we do writing your first blog
+                                post.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="absolute left-4 top-4 -z-[1]">
+                <svg width="48" height="134" viewBox="0 0 48 134" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="73.3335" r="1.66667" transform="rotate(180 45.6673 73.3335)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)"
+                        fill="#13C296" />
+                    <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="132" r="1.66667" transform="rotate(180 31.0013 132)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="117.333" r="1.66667" transform="rotate(180 31.0013 117.333)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="102.667" r="1.66667" transform="rotate(180 31.0013 102.667)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="88.0001" r="1.66667" transform="rotate(180 31.0013 88.0001)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="73.3335" r="1.66667" transform="rotate(180 31.0013 73.3335)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="45.0001" r="1.66667" transform="rotate(180 31.0013 45.0001)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="16.0001" r="1.66667" transform="rotate(180 31.0013 16.0001)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="59.0001" r="1.66667" transform="rotate(180 31.0013 59.0001)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="30.6668" r="1.66667" transform="rotate(180 31.0013 30.6668)"
+                        fill="#13C296" />
+                    <circle cx="31.0013" cy="1.66683" r="1.66667" transform="rotate(180 31.0013 1.66683)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="132" r="1.66667" transform="rotate(180 16.3333 132)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="117.333" r="1.66667" transform="rotate(180 16.3333 117.333)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="102.667" r="1.66667" transform="rotate(180 16.3333 102.667)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="88.0001" r="1.66667" transform="rotate(180 16.3333 88.0001)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="73.3335" r="1.66667" transform="rotate(180 16.3333 73.3335)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="45.0001" r="1.66667" transform="rotate(180 16.3333 45.0001)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="16.0001" r="1.66667" transform="rotate(180 16.3333 16.0001)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="59.0001" r="1.66667" transform="rotate(180 16.3333 59.0001)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="30.6668" r="1.66667" transform="rotate(180 16.3333 30.6668)"
+                        fill="#13C296" />
+                    <circle cx="16.3333" cy="1.66683" r="1.66667" transform="rotate(180 16.3333 1.66683)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="73.3335" r="1.66667" transform="rotate(180 1.66732 73.3335)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)"
+                        fill="#13C296" />
+                    <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)"
+                        fill="#13C296" />
+                </svg>
+            </span>
+            <span class="absolute bottom-4 right-4 -z-[1]">
+                <svg width="48" height="134" viewBox="0 0 48 134" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="73.3333" r="1.66667" transform="rotate(180 45.6673 73.3333)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)"
+                        fill="#3758F9" />
+                    <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)"
+                        fill="#3758F9" />
+                    <circle cx="31.0006" cy="132" r="1.66667" transform="rotate(180 31.0006 132)"
+                        fill="#3758F9" />
+                    <circle cx="31.0006" cy="117.333" r="1.66667" transform="rotate(180 31.0006 117.333)"
+                        fill="#3758F9" />
+                    <circle cx="31.0006" cy="102.667" r="1.66667" transform="rotate(180 31.0006 102.667)"
+                        fill="#3758F9" />
+                    <circle cx="31.0006" cy="88.0001" r="1.66667" transform="rotate(180 31.0006 88.0001)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="73.3333" r="1.66667" transform="rotate(180 31.0008 73.3333)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="45.0001" r="1.66667" transform="rotate(180 31.0008 45.0001)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="16.0001" r="1.66667" transform="rotate(180 31.0008 16.0001)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="59.0001" r="1.66667" transform="rotate(180 31.0008 59.0001)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="30.6668" r="1.66667" transform="rotate(180 31.0008 30.6668)"
+                        fill="#3758F9" />
+                    <circle cx="31.0008" cy="1.66683" r="1.66667" transform="rotate(180 31.0008 1.66683)"
+                        fill="#3758F9" />
+                    <circle cx="16.3341" cy="132" r="1.66667" transform="rotate(180 16.3341 132)"
+                        fill="#3758F9" />
+                    <circle cx="16.3341" cy="117.333" r="1.66667" transform="rotate(180 16.3341 117.333)"
+                        fill="#3758F9" />
+                    <circle cx="16.3341" cy="102.667" r="1.66667" transform="rotate(180 16.3341 102.667)"
+                        fill="#3758F9" />
+                    <circle cx="16.3341" cy="88.0001" r="1.66667" transform="rotate(180 16.3341 88.0001)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="73.3333" r="1.66667" transform="rotate(180 16.3338 73.3333)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="45.0001" r="1.66667" transform="rotate(180 16.3338 45.0001)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="16.0001" r="1.66667" transform="rotate(180 16.3338 16.0001)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="59.0001" r="1.66667" transform="rotate(180 16.3338 59.0001)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="30.6668" r="1.66667" transform="rotate(180 16.3338 30.6668)"
+                        fill="#3758F9" />
+                    <circle cx="16.3338" cy="1.66683" r="1.66667" transform="rotate(180 16.3338 1.66683)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="73.3333" r="1.66667" transform="rotate(180 1.66732 73.3333)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)"
+                        fill="#3758F9" />
+                    <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)"
+                        fill="#3758F9" />
+                </svg>
+            </span>
+        </div>
+    </section>
+
+    <section id="contact" class="relative py-20 md:py-[120px]">
+        <div class="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
+        <div class="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2">
+        </div>
+        <div class="container px-4">
+            <div class="-mx-4 flex flex-wrap items-center">
+                <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
+                    <div class="ud-contact-content-wrapper">
+                        <div class="ud-contact-title mb-12 lg:mb-[150px]">
+                            <span class="mb-6 block text-base font-medium text-dark dark:text-white">CONTACT US</span>
+                            <h2
+                                class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                                Let's talk about your problem.</h2>
+                        </div>
+
+                        <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
+                            <div class="mb-8 flex w-[330px] max-w-full">
+                                <div class="mr-6 text-[32px] text-primary">
+                                    <svg width="29" height="35" viewBox="0 0 29 35" class="fill-current">
+                                        <path
+                                            d="M14.5 0.710938C6.89844 0.710938 0.664062 6.72656 0.664062 14.0547C0.664062 19.9062 9.03125 29.5859 12.6406 33.5234C13.1328 34.0703 13.7891 34.3437 14.5 34.3437C15.2109 34.3437 15.8672 34.0703 16.3594 33.5234C19.9688 29.6406 28.3359 19.9062 28.3359 14.0547C28.3359 6.67188 22.1016 0.710938 14.5 0.710938ZM14.9375 32.2109C14.6641 32.4844 14.2812 32.4844 14.0625 32.2109C11.3828 29.3125 2.57812 19.3594 2.57812 14.0547C2.57812 7.71094 7.9375 2.625 14.5 2.625C21.0625 2.625 26.4219 7.76562 26.4219 14.0547C26.4219 19.3594 17.6172 29.2578 14.9375 32.2109Z" />
+                                        <path
+                                            d="M14.5 8.58594C11.2734 8.58594 8.59375 11.2109 8.59375 14.4922C8.59375 17.7188 11.2187 20.3984 14.5 20.3984C17.7812 20.3984 20.4062 17.7734 20.4062 14.4922C20.4062 11.2109 17.7266 8.58594 14.5 8.58594ZM14.5 18.4297C12.3125 18.4297 10.5078 16.625 10.5078 14.4375C10.5078 12.25 12.3125 10.4453 14.5 10.4453C16.6875 10.4453 18.4922 12.25 18.4922 14.4375C18.4922 16.625 16.6875 18.4297 14.5 18.4297Z" />
                                     </svg>
                                 </div>
-
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
-
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white dark:focus-visible:ring-[#FF2D20]">Forge</a>, <a href="https://vapor.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Vapor</a>, <a href="https://nova.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Nova</a>, <a href="https://envoyer.io" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Envoyer</a>, and <a href="https://herd.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Herd</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Echo</a>, <a href="https://laravel.com/docs/horizon" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Telescope</a>, and more.
+                                <div>
+                                    <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                                        Our Location
+                                    </h5>
+                                    <p class="text-base text-body-color dark:text-dark-6">
+                                        401 Broadway, 24th Floor, Orchard Cloud View, London
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-8 flex w-[330px] max-w-full">
+                                <div class="mr-6 text-[32px] text-primary">
+                                    <svg width="34" height="25" viewBox="0 0 34 25" class="fill-current">
+                                        <path
+                                            d="M30.5156 0.960938H3.17188C1.42188 0.960938 0 2.38281 0 4.13281V20.9219C0 22.6719 1.42188 24.0938 3.17188 24.0938H30.5156C32.2656 24.0938 33.6875 22.6719 33.6875 20.9219V4.13281C33.6875 2.38281 32.2656 0.960938 30.5156 0.960938ZM30.5156 2.875C30.7891 2.875 31.0078 2.92969 31.2266 3.09375L17.6094 11.3516C17.1172 11.625 16.5703 11.625 16.0781 11.3516L2.46094 3.09375C2.67969 2.98438 2.89844 2.875 3.17188 2.875H30.5156ZM30.5156 22.125H3.17188C2.51562 22.125 1.91406 21.5781 1.91406 20.8672V5.00781L15.0391 12.9922C15.5859 13.3203 16.1875 13.4844 16.7891 13.4844C17.3906 13.4844 17.9922 13.3203 18.5391 12.9922L31.6641 5.00781V20.8672C31.7734 21.5781 31.1719 22.125 30.5156 22.125Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                                        How Can We Help?
+                                    </h5>
+                                    <p class="text-base text-body-color dark:text-dark-6">
+                                        info@yourdomain.com
+                                    </p>
+                                    <p class="mt-1 text-base text-body-color dark:text-dark-6">
+                                        contact@yourdomain.com
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </main>
-
-                    <footer class="py-16 text-center text-sm text-black dark:text-white/70">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </footer>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
+                    <div class="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-dark-2 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+                        data-wow-delay=".2s
+                ">
+                        <h3
+                            class="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
+                            Send us a Message
+                        </h3>
+                        <form>
+                            <div class="mb-[22px]">
+                                <label for="fullName"
+                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Full Name*</label>
+                                <input type="text" name="fullName" placeholder="Adam Gelius"
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                            </div>
+                            <div class="mb-[22px]">
+                                <label for="email"
+                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Email*</label>
+                                <input type="email" name="email" placeholder="example@yourmail.com"
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                            </div>
+                            <div class="mb-[22px]">
+                                <label for="phone"
+                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Phone*</label>
+                                <input type="text" name="phone" placeholder="+885 1254 5211 552"
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                            </div>
+                            <div class="mb-[30px]">
+                                <label for="message"
+                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Message*</label>
+                                <textarea name="message" rows="1" placeholder="type your message here"
+                                    class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"></textarea>
+                            </div>
+                            <div class="mb-0">
+                                <button type="submit"
+                                    class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </section>
+
+    <a href="javascript:void(0)"
+        class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark">
+        <span class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
+    </a>
+
+</x-guest-layout>
