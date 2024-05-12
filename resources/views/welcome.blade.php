@@ -356,10 +356,10 @@
                     <div class="w-full px-4 lg:w-1/2">
                         <div class="mb-12 max-w-[540px] lg:mb-0">
                             <h2
-                                class="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
+                                class="mb-5 text-3xl font-bold leading-tight text- :text-white sm:text-[40px] sm:leading-[1.2]">
                                 Brilliant Toolkit to Build Nextgen Website Faster.
                             </h2>
-                            <p class="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+                            <p class="mb-10 text-base leading-relaxed text-body-color :text--6">
                                 The main ‘thrust' is to focus on educating attendees on how to
                                 best protect highly vulnerable business applications with
                                 interactive panel discussions and roundtables led by subject
@@ -372,7 +372,7 @@
                             </p>
 
                             <a href="javascript:void(0)"
-                                class="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-blue-dark hover:bg-blue-dark">
+                                class="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-blue- hover:bg-blue-">
                                 Know More
                             </a>
                         </div>
@@ -519,7 +519,7 @@
     </section>
 
     <!-- ====== Testimonial Section Start -->
-    <section id="testimonials" class="overflow-hidden bg-gray-1 py-20 dark:bg-dark-2 md:py-[120px]">
+    <section id="testimonials" class="overflow-hidden bg-gray-1 py-20 :bg--2 md:py-[120px]">
         <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap justify-center">
                 <div class="w-full px-4">
@@ -528,10 +528,10 @@
                             Testimonials
                         </span>
                         <h2
-                            class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            class="mb-3 text-3xl font-bold leading-[1.2] text- :text-white sm:text-4xl md:text-[40px]">
                             What our Clients Say
                         </h2>
-                        <p class="text-base text-body-color dark:text-dark-6">
+                        <p class="text-base text-body-color :text--6">
                             There are many variations of passages of Lorem Ipsum available
                             but the majority have suffered alteration in some form.
                         </p>
@@ -544,7 +544,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -553,7 +553,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -565,7 +565,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             Sabo Masties
                                         </h3>
                                         <p class="text-xs text-body-secondary">Founder @ Rolex</p>
@@ -576,7 +576,7 @@
 
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -585,7 +585,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -597,7 +597,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             Musharof Chowdhury
                                         </h3>
                                         <p class="text-xs text-body-secondary">
@@ -610,7 +610,7 @@
 
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -619,7 +619,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -631,7 +631,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             William Smith
                                         </h3>
                                         <p class="text-xs text-body-secondary">
@@ -644,7 +644,7 @@
 
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -653,7 +653,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -665,7 +665,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             Sabo Masties
                                         </h3>
                                         <p class="text-xs text-body-secondary">Founder @ Rolex</p>
@@ -676,7 +676,7 @@
 
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -685,7 +685,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -697,7 +697,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             Musharof Chowdhury
                                         </h3>
                                         <p class="text-xs text-body-secondary">
@@ -710,7 +710,7 @@
 
                         <div class="swiper-slide">
                             <div
-                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]">
+                                class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial :bg- sm:px-[30px]">
                                 <div class="mb-[18px] flex items-center gap-[2px]">
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
@@ -719,7 +719,7 @@
                                     <img src="./assets/images/testimonials/icon-star.svg" alt="star icon" />
                                 </div>
 
-                                <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                                <p class="mb-6 text-base text-body-color :text--6">
                                     “Our members are so impressed. It's intuitive. It's clean.
                                     It's distraction free. If you're building a community.’’
                                 </p>
@@ -731,7 +731,7 @@
                                     </div>
 
                                     <div>
-                                        <h3 class="text-sm font-semibold text-dark dark:text-white">
+                                        <h3 class="text-sm font-semibold text- :text-white">
                                             William Smith
                                         </h3>
                                         <p class="text-xs text-body-secondary">
@@ -767,7 +767,7 @@
     <!-- ====== Testimonial Section End -->
 
     <!-- ====== FAQ Section Start -->
-    <section class="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <section class="relative z-20 overflow-hidden bg-white pb-8 pt-20 :bg- lg:pb-[50px] lg:pt-[120px]">
         <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
@@ -776,10 +776,10 @@
                             FAQ
                         </span>
                         <h2
-                            class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            class="mb-3 text-3xl font-bold leading-[1.2] text- :text-white sm:text-4xl md:text-[40px]">
                             Any Questions? Look Here
                         </h2>
-                        <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
+                        <p class="mx-auto max-w-[485px] text-base text-body-color :text--6">
                             There are many variations of passages of Lorem Ipsum available
                             but the majority have suffered alteration in some form.
                         </p>
@@ -802,10 +802,10 @@
                         </div>
                         <div class="w-full">
                             <h3
-                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                class="mb-6 text-xl font-semibold text- :text-white sm:text-2xl lg:text-xl xl:text-2xl">
                                 Is TailGrids Well-documented?
                             </h3>
-                            <p class="text-base text-body-color dark:text-dark-6">
+                            <p class="text-base text-body-color :text--6">
                                 It takes 2-3 weeks to get your first blog post ready. That
                                 includes the in-depth research & creation of your monthly
                                 content ui/ux strategy that we do writing your first blog
@@ -827,10 +827,10 @@
                         </div>
                         <div class="w-full">
                             <h3
-                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                class="mb-6 text-xl font-semibold text- :text-white sm:text-2xl lg:text-xl xl:text-2xl">
                                 Is TailGrids Well-documented?
                             </h3>
-                            <p class="text-base text-body-color dark:text-dark-6">
+                            <p class="text-base text-body-color :text--6">
                                 It takes 2-3 weeks to get your first blog post ready. That
                                 includes the in-depth research & creation of your monthly
                                 content ui/ux strategy that we do writing your first blog
@@ -854,10 +854,10 @@
                         </div>
                         <div class="w-full">
                             <h3
-                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                class="mb-6 text-xl font-semibold text- :text-white sm:text-2xl lg:text-xl xl:text-2xl">
                                 Is TailGrids Well-documented?
                             </h3>
-                            <p class="text-base text-body-color dark:text-dark-6">
+                            <p class="text-base text-body-color :text--6">
                                 It takes 2-3 weeks to get your first blog post ready. That
                                 includes the in-depth research & creation of your monthly
                                 content ui/ux strategy that we do writing your first blog
@@ -879,10 +879,10 @@
                         </div>
                         <div class="w-full">
                             <h3
-                                class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                                class="mb-6 text-xl font-semibold text- :text-white sm:text-2xl lg:text-xl xl:text-2xl">
                                 Is TailGrids Well-documented?
                             </h3>
-                            <p class="text-base text-body-color dark:text-dark-6">
+                            <p class="text-base text-body-color :text--6">
                                 It takes 2-3 weeks to get your first blog post ready. That
                                 includes the in-depth research & creation of your monthly
                                 content ui/ux strategy that we do writing your first blog
@@ -1068,17 +1068,17 @@
     </section>
 
     <section id="contact" class="relative py-20 md:py-[120px]">
-        <div class="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
-        <div class="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2">
+        <div class="absolute left-0 top-0 -z-[1] h-full w-full :bg-"></div>
+        <div class="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] :bg--700 lg:h-[45%] xl:h-1/2">
         </div>
         <div class="container px-4">
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
                     <div class="ud-contact-content-wrapper">
                         <div class="ud-contact-title mb-12 lg:mb-[150px]">
-                            <span class="mb-6 block text-base font-medium text-dark dark:text-white">CONTACT US</span>
+                            <span class="mb-6 block text-base font-medium text- :text-white">CONTACT US</span>
                             <h2
-                                class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                                class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text- :text-white">
                                 Let's talk about your problem.</h2>
                         </div>
 
@@ -1093,10 +1093,10 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                                    <h5 class="mb-[18px] text-lg font-semibold text- :text-white">
                                         Our Location
                                     </h5>
-                                    <p class="text-base text-body-color dark:text-dark-6">
+                                    <p class="text-base text-body-color :text--6">
                                         401 Broadway, 24th Floor, Orchard Cloud View, London
                                     </p>
                                 </div>
@@ -1109,13 +1109,13 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                                    <h5 class="mb-[18px] text-lg font-semibold text- :text-white">
                                         How Can We Help?
                                     </h5>
-                                    <p class="text-base text-body-color dark:text-dark-6">
+                                    <p class="text-base text-body-color :text--6">
                                         info@yourdomain.com
                                     </p>
-                                    <p class="mt-1 text-base text-body-color dark:text-dark-6">
+                                    <p class="mt-1 text-base text-body-color :text--6">
                                         contact@yourdomain.com
                                     </p>
                                 </div>
@@ -1124,41 +1124,41 @@
                     </div>
                 </div>
                 <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
-                    <div class="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-dark-2 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+                    <div class="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial :bg--2 :shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
                         data-wow-delay=".2s
                 ">
                         <h3
-                            class="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
+                            class="mb-8 text-2xl font-semibold text- :text-white md:text-[28px] md:leading-[1.42]">
                             Send us a Message
                         </h3>
                         <form>
                             <div class="mb-[22px]">
                                 <label for="fullName"
-                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Full Name*</label>
+                                    class="mb-4 block text-sm text-body-color :text--6">Full Name*</label>
                                 <input type="text" name="fullName" placeholder="Adam Gelius"
-                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none :border--3 :text--6" />
                             </div>
                             <div class="mb-[22px]">
                                 <label for="email"
-                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Email*</label>
+                                    class="mb-4 block text-sm text-body-color :text--6">Email*</label>
                                 <input type="email" name="email" placeholder="example@yourmail.com"
-                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none :border--3 :text--6" />
                             </div>
                             <div class="mb-[22px]">
                                 <label for="phone"
-                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Phone*</label>
+                                    class="mb-4 block text-sm text-body-color :text--6">Phone*</label>
                                 <input type="text" name="phone" placeholder="+885 1254 5211 552"
-                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
+                                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none :border--3 :text--6" />
                             </div>
                             <div class="mb-[30px]">
                                 <label for="message"
-                                    class="mb-4 block text-sm text-body-color dark:text-dark-6">Message*</label>
+                                    class="mb-4 block text-sm text-body-color :text--6">Message*</label>
                                 <textarea name="message" rows="1" placeholder="type your message here"
-                                    class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"></textarea>
+                                    class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none :border--3 :text--6"></textarea>
                             </div>
                             <div class="mb-0">
                                 <button type="submit"
-                                    class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">
+                                    class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-">
                                     Send
                                 </button>
                             </div>
@@ -1170,7 +1170,7 @@
     </section>
 
     <a href="javascript:void(0)"
-        class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark">
+        class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-">
         <span class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
     </a>
 
