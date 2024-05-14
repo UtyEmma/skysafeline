@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Safe Sky Line</title>
+    <title>{{env('APP_NAME')}} | Recover Your Lost Assets Today, Reclaim your peace of mind</title>
+
+    <meta name="description" content="Skysafeline Asset Recovery specializes in recovering lost assets from online scams and cyber fraud. Trust our experienced professionals to help you reclaim what's rightfully yours.">
+    <meta name="keywords" content="asset recovery, online scams, cyber fraud, financial fraud, cryptocurrency tracing, online grooming investigations, social media investigation, corporate due diligence, scam victims, victim assistance">
+    <meta name="author" content="Skysafeline Asset Recovery Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Skysafeline Asset Recovery | Reclaim Your Lost Assets Today">
+    <meta property="og:description" content="Skysafeline Asset Recovery specializes in recovering lost assets from online scams and cyber fraud. Trust our experienced professionals to help you reclaim what's rightfully yours.">
+    <meta property="og:image" content="{{asset('cyber-recovery.png')}}">
+    <meta property="og:url" content="{{route('home')}}">
+    <meta name="twitter:card" content="Skysafeline Asset Recovery specializes in recovering lost assets from online scams and cyber fraud. Trust our experienced professionals to help you reclaim what's rightfully yours">
+    <meta name="twitter:title" content="Skysafeline Asset Recovery | Reclaim Your Lost Assets Today">
+    <meta name="twitter:description" content="Skysafeline Asset Recovery specializes in recovering lost assets from online scams and cyber fraud. Trust our experienced professionals to help you reclaim what's rightfully yours.">
+    <meta name="twitter:image" content="{{asset('cyber-recovery.png')}}">
+    <meta name="language" content="English">
     <link rel="shortcut icon" href="{{asset('favicon.png')}}" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
