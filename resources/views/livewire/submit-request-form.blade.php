@@ -1,4 +1,4 @@
-<div class="my-16">
+<div class="my-10">
     <div
         class="p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
         <div class="mb-5">

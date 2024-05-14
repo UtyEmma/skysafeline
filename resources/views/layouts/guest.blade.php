@@ -25,8 +25,6 @@
   <body>
 <body >
 
-    @include('layouts.partials.guest.navbar')
-
     {{$slot}}
 
     @include('layouts.partials.guest.footer')

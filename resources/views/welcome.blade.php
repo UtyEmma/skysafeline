@@ -1,6 +1,8 @@
 <x-guest-layout>
-    <div id="home" class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]">
-        <div class="container">
+    <div class="relative overflow-hidden bg-primary">
+        @include('layouts.partials.guest.navbar')
+
+        <div class="container mt-5">
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4">
                     <div class="wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
@@ -10,7 +12,7 @@
                 </div>
 
                 <div class="w-full px-4" id="report">
-                    <div class="wow fadeInUp relative z-10 mx-auto max-w-2xl" data-wow-delay=".25s">
+                    <div class="wow fadeInUp mx-auto max-w-2xl" data-wow-delay=".25s">
                         <livewire:submit-request-form />
 
                         <div class="absolute -left-9 -bottom-9 z-[-1]">
