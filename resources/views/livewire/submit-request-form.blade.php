@@ -1,8 +1,8 @@
 <div class="my-10">
     <div
-        class="p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
+        class="p-4 relative z-10 bg-white border rounded-xl md:p-10">
         <div class="mb-5">
-            <h1 class="font-semibold text-xl">Ready to Reclaim Your Assets? Act Now!</h1>
+            <h1 class="font-semibold text-xl text-dark">Ready to Reclaim Your Assets? Act Now!</h1>
             <p class="text-gray-500 text-sm md:text-base">Fill out the form below with your case details, and our
                 expert team will respond within hours to begin the process of recovering your
                 assets.</p>
@@ -58,7 +58,7 @@
             @endif
 
             <div class="grid">
-                <x-button wire:loading wire:target="submit" class="w-full btn-primary">Submit</x-button>
+                <x-button wire:loading wire:target="submit" class="w-full bg-primary">Submit</x-button>
             </div>
         </form>
     </div>

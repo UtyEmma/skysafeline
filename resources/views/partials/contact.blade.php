@@ -2,8 +2,8 @@
     <div class="container px-4">
       <div class="w-full">
         <div class="mb-12">
-            <span class="mb-6 block text-base font-medium text-dark dark:text-white" >CONTACT US</span>
-            <h2 class="text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">Let's talk about your problem.</h2>
+            <span class="mb-6 block text-base font-medium text-dark" >CONTACT US</span>
+            <h2 class="text-[35px] font-semibold leading-[1.14] text-dark">Let's talk about your problem.</h2>
         </div>
 
         <div class="flex flex-wrap justify-between lg:mb-0 w-full">
@@ -14,8 +14,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h5 class="mb-2 text-lg font-semibold text-dark dark:text-white" >Give us a Call</h5>
-                    <p class="text-base text-body-color dark:text-dark-6">+1 (805) 316-1411 </p>
+                    <h5 class="mb-2 text-lg font-semibold text-dark" >Give us a Call</h5>
+                    <p class="text-base text-body-color">+1 (805) 316-1411 </p>
                 </div>
             </div>
             <div class="mb-8 flex md:w-1/3 md:justify-center">
@@ -25,8 +25,8 @@
                     </svg>
                 </div>
                 <div>
-                <h5 class="mb-2 text-lg font-semibold text-dark dark:text-white" >Send us an Email</h5>
-                <p class="text-base text-body-color dark:text-dark-6">contact@skysafeline.com</p>
+                <h5 class="mb-2 text-lg font-semibold text-dark " >Send us an Email</h5>
+                <p class="text-base text-body-color ">contact@skysafeline.com</p>
 
                 </div>
             </div>
@@ -38,8 +38,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h5 class="mb-2 text-lg font-semibold text-dark dark:text-white">Visit our office</h5>
-                    <p class="text-base text-body-color dark:text-dark-6">2215 E Alcazar St, Los Angeles, CA, 90033</p>
+                    <h5 class="mb-2 text-lg font-semibold text-dark">Visit our office</h5>
+                    <p class="text-base text-body-color">2215 E Alcazar St, Los Angeles, CA, 90033</p>
                 </div>
             </div>
         </div>
