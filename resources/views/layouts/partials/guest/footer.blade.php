@@ -261,8 +261,8 @@
 
       <div class="border-t border-[#8890A4] border-opacity-40 py-8">
         <div class="container">
-          <div class="-mx-4 flex flex-wrap">
-            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+          <div class="-mx-4 flex items-center">
+            {{-- <div class="w-full px-4 md:w-2/3 lg:w-1/2">
               <div class="my-1">
                 <div
                   class="-mx-3 flex items-center justify-center md:justify-start"
@@ -287,18 +287,17 @@
                   </a>
                 </div>
               </div>
-            </div>
-            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
-              <div class="my-1 flex justify-center md:justify-end">
-                <p class="text-base text-gray-7">
-                  Designed and Developed by
+            </div> --}}
+            <div class="w-full px-4">
+              <div class="my-1 flex justify-center">
+                <p class="text-base text-gray-7 text-center">
+                  Copyright &copy; {{now()->format('Y')}}
                   <a
-                    href="https://tailgrids.com"
+                    href="{{route('home')}}"
                     rel="nofollow noopner"
-                    target="_blank"
                     class="text-gray-1 hover:underline"
                   >
-                    TailGrids and UIdeck
+                    {{env('COMPANY_NAME')}}
                   </a>
                 </p>
               </div>
