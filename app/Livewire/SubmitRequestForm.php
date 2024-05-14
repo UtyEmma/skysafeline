@@ -23,6 +23,7 @@ class SubmitRequestForm extends Component {
     }
 
     function submit(){
+        $this->reset(['status', 'message']);
         $this->validate();
 
         $email = env('EMAIL_ADDRESS');
@@ -56,6 +57,8 @@ class SubmitRequestForm extends Component {
             ->line(new HtmlString("<strong>Details:</strong> {$this->details}"))
             ->replyTo($this->email, $this->name)
             ->mail($email);
+
+        $this->reset();
 
         $this->status = 'green-600';
         $this->message = "Your Request has been submitted successfully! Our team will get in touch with you.";
