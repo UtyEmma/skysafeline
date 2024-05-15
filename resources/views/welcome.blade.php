@@ -473,9 +473,9 @@
                             {{-- <p class="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
                                 Help prevent crime proceeds. Report today.
                             </p> --}}
-                            <a href="#report" class="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
+                            <button onclick="document.getElementById('report').scrollIntoView()" class="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
                                 Report Now
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
