@@ -53,7 +53,7 @@ export default {
                 7: "#D1D5DB",
                 8: "#E5E7EB",
               },
-              primary: "#3758F9",
+              primary: "#E82D2F",
               "blue-dark": "#1B44C8",
               secondary: "#13C296",
               "body-color": "#637381",
