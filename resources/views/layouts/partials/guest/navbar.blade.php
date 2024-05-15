@@ -1,4 +1,4 @@
-<div class="bg-transparent">
+<div class="bg-white ">
     <div class="container">
         <div class="relative -mx-4 flex items-center justify-center">
             <div class="w-60 max-w-full px-4">

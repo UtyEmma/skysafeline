@@ -1,9 +1,9 @@
 <x-guest-layout>
-    <div class="relative overflow-hidden bg-primary">
+    <div class="overflow-hidden bg-primary">
         @include('layouts.partials.guest.navbar')
 
-        <div class="container mt-5">
-            <div class="-mx-4 flex flex-wrap items-center">
+        <div class="container mt-5 md:mt-10 py-10">
+            <div class="flex flex-wrap items-center">
                 <div class="w-full px-4">
                     <div class="wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
                         <h1 class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">Reclaim Your Assets, Reclaim Your Peace of Mind</h1>
