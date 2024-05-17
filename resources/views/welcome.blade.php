@@ -1,8 +1,8 @@
 <x-guest-layout>
     <div class="overflow-hidden bg-primary">
-        @include('layouts.partials.guest.navbar')
+        {{-- @include('layouts.partials.guest.navbar') --}}
 
-        <div class="container mt-5 md:mt-10 py-10">
+        <div class="container mt-5 md:my-20 py-10">
             <div class="flex flex-wrap items-center">
                 <div class="w-full px-4">
                     <div class="wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
@@ -458,13 +458,13 @@
     <!-- ====== About Section End -->
 
     <!-- ====== CTA Section Start -->
-    <section class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
+    <section class="relative z-10 overflow-hidden bg-primary opacity-95 py-20 lg:py-[115px]">
         <div class="container mx-auto">
             <div class="relative overflow-hidden">
                 <div class="-mx-4 flex flex-wrap items-stretch">
                     <div class="w-full px-4">
                         <div class="mx-auto max-w-5xl text-center">
-                            <h2 class="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                            <h2 class="mb-20 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
                                 <span>Report Proceeds of Crime</span> <br>
                                 <span class="text-3xl font-normal md:text-[40px]">
                                     Help prevent crime proceeds. Report today.
@@ -473,7 +473,7 @@
                             {{-- <p class="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
                                 Help prevent crime proceeds. Report today.
                             </p> --}}
-                            <button onclick="document.getElementById('report').scrollIntoView()" class="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
+                            <button onclick="document.getElementById('report').scrollIntoView()" class="inline-block rounded-md border border-transparent bg-white px-10 py-3 text-xl font-medium text-primary transition hover:scale-110 mb-3">
                                 Report Now
                             </button>
                         </div>

@@ -7,7 +7,9 @@ use Livewire\Component;
 
 class SubmitRequestForm extends Component {
 
-    public $name, $email, $phone, $company, $amount, $details;
+    public $name, $email, $phone, $company, $amount, $details, $currency;
+
+    public $countries = [];
 
     public $status, $message;
 
@@ -20,6 +22,10 @@ class SubmitRequestForm extends Component {
             'amount' => 'required|numeric',
             'details' => 'required|string'
         ];
+    }
+
+    function mount(){
+        $this->countries = config('countries');
     }
 
     function submit(){
@@ -38,6 +44,7 @@ class SubmitRequestForm extends Component {
             ->line(new HtmlString("<strong>Email Address:</strong> {$this->email}"))
             ->line(new HtmlString("<strong>Phone Number:</strong> {$this->phone}"))
             ->line(new HtmlString("<strong>Company:</strong> {$this->company}"))
+            ->line(new HtmlString("<strong>Currency:</strong> {$this->currency}"))
             ->line(new HtmlString("<strong>Amount:</strong> {$this->amount}"))
             ->line(new HtmlString("<strong>Details:</strong> {$this->details}"))
             ->line('Rest assured that our team of experienced professionals is already reviewing your case and will reach out to you within the next few hours.')
@@ -53,6 +60,7 @@ class SubmitRequestForm extends Component {
             ->line(new HtmlString("<strong>Email Address:</strong> {$this->email}"))
             ->line(new HtmlString("<strong>Phone Number:</strong> {$this->phone}"))
             ->line(new HtmlString("<strong>Company:</strong> {$this->company}"))
+            ->line(new HtmlString("<strong>Currency:</strong> {$this->currency}"))
             ->line(new HtmlString("<strong>Amount:</strong> {$this->amount}"))
             ->line(new HtmlString("<strong>Details:</strong> {$this->details}"))
             ->replyTo($this->email, $this->name)
