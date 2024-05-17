@@ -39,10 +39,23 @@
                 <x-input.error key="company" />
             </div>
 
-            <div class="mb-4">
-                <x-input.label>Amount</x-input.label>
-                <x-input wire:model="amount" placeholder="Amount"/>
-                <x-input.error key="amount" />
+            <div class="flex mb-4 space-x-3">
+                <div class="w-1/3">
+                    <x-input.label>Currency</x-input.label>
+                    <x-input.select wire:model="currency" >
+                        <option value="">Select Currency</option>
+                        @foreach ($countries as $country)
+                            <option>{{$country['code']}} - {{$country['name']}}</option>
+                        @endforeach
+                    </x-input.select>
+                    <x-input.error key="currency" />
+                </div>
+
+                <div class="w-2/3">
+                    <x-input.label>Amount</x-input.label>
+                    <x-input wire:model="amount" placeholder="Amount"/>
+                    <x-input.error key="amount" />
+                </div>
             </div>
 
             <div class="mb-4">
@@ -58,7 +71,7 @@
             @endif
 
             <div class="grid">
-                <x-button wire:loading wire:target="submit" class="w-full bg-primary">Submit</x-button>
+                <x-button wire:loading wire:target="submit" class="w-full bg-primary text-white text-lg">Submit</x-button>
             </div>
         </form>
     </div>
