@@ -516,10 +516,6 @@
                             class="mb-3 text-3xl font-bold leading-[1.2] text- :text-white sm:text-4xl md:text-[40px]">
                             Any Questions? Look Here
                         </h2>
-                        <p class="mx-auto max-w-[485px] text-base text-body-color :text--6">
-                            There are many variations of passages of Lorem Ipsum available
-                            but the majority have suffered alteration in some form.
-                        </p>
                     </div>
                 </div>
             </div>
